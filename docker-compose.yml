@@ -159,7 +159,7 @@ services:
       - |
         pip install boto3 --quiet
         mlflow server --host 0.0.0.0 \
-            --default-artifact-root s3://mlops-webinar-example/mlflow --serve-artifacts
+            --default-artifact-root s3://your_name_bucket/mlflow --serve-artifacts
     expose:
       - "5000"
     ports:
